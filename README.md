@@ -21,7 +21,7 @@ In the original starter setup, two main issues prevented the app from working co
 ## 2. Project Links
 
 - **GitHub Repository**: [https://github.com/themanojkumawat/assessment](https://github.com/themanojkumawat/assessment)
-- **Docker Hub Repository**: [https://hub.docker.com/r/themanojkumawat/assessment](https://hub.docker.com/r/themanojkumawat/assessment)
+- **Docker Hub Repository**: [https://hub.docker.com/r/manojkumawat/assessment/tags](https://hub.docker.com/r/manojkumawat/assessment/tags)
 
 ---
 
@@ -146,12 +146,3 @@ In your repo, go to **Settings > Secrets and variables > Actions** and add:
 - `DOCKER_PASSWORD`: Your Docker Hub Personal Access Token (PAT)
 
 ---
-
-## 7. Demo Video Outline (3–5 Minutes)
-
-**Video Link**: [Watch Demo](https://youtu.be/placeholder-demo-video) *(Replace with unlisted video link)*
-
-- **0:00 - 0:45**: Project overview and explanation of the `127.0.0.1` binding bug fix.
-- **0:45 - 1:45**: Run `pytest -v` and run `./deploy.sh` to show the container starting healthy.
-- **1:45 - 2:30**: Test `/` and `/health` with curl, run `./monitor.sh` to show 10-second polling.
-- **2:30 - 3:30**: Show GitHub Actions running the pipeline and the pushed image on Docker Hub.
