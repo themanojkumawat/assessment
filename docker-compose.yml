@@ -1,0 +1,18 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: ${DOCKER_IMAGE:-flask-devops-task:latest}
+    container_name: flask-devops-app
+    restart: unless-stopped
+    ports:
+      - "${PORT:-5000}:5000"
+    env_file:
+      - .env
+    healthcheck:
+      test: [ "CMD-SHELL", "curl -f http://localhost:5000/health || exit 1" ]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 5s
